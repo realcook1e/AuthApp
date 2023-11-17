@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.ico">
+	<title>Авторизация</title>
+</head>
+<body class="login">
+	<div class="wrapper">
+		<div class="main">
+			<section class="main__item main-item">
+				<h2 class="main-item__title">Уже зарегистрированы?</h2>
+				<button class="main-item__btn login-btn">Войти</button>
+			</section>
+			<section class="main__item main-item">
+				<h2 class="main-item__title">Нет аккаунта?</h2>
+				<button class="main-item__btn register-btn">Зарегистрироваться</button>
+			</section>
+		</div>
+
+		<div class="form-container login">
+			<form action="#" class="form form-login">
+				<div class="form__header">
+					<h3 class="form__title">Вход</h3>
+				</div>
+				<p>
+					<input type="text" name="username" class="form__input form__login" placeholder="Логин" required>
+				</p>
+				<p>
+					<input type="password" name="password" class="form__input form__password" placeholder="Пароль" required>
+				</p>
+				<p>
+					<button class="form__btn">Войти</button>
+				</p>
+				<p>
+					<a href="#" class="form__recover">Восстановить пароль</a>
+				</p>
+			</form>
+
+			<form action="#" class="form form-register">
+				<div class="form__header">
+					<h3 class="form__title">Регистрация</h3>
+				</div>
+				<p>
+					<input type="text" name="username" class="form__input form__login" placeholder="Логин" required>
+				</p>
+				<p>
+					<input type="email" name="email" class="form__input form__email" placeholder="Email" required>
+				</p>
+				<p>
+					<input type="password" name="password" class="form__input form__password" placeholder="Пароль" required>
+				</p>
+				<p>
+					<input type="password" name="password-repeat" class="form__input form__password-repeat" placeholder="Подтвердите пароль" required>
+				</p>
+				<p>
+					<label class="form__radio"><input type="radio" name="gender" checked value="Мужчина"> Мужчина</label> <label class="form__radio"><input type="radio" name="gender" value="Женщина"> Женщина</label>
+				</p>
+				<p>
+					<button class="form__btn form__btn_register">Зарегистрироваться</button>
+				</p>
+			</form>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
